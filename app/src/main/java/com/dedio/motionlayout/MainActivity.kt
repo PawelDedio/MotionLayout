@@ -30,9 +30,10 @@ class MainActivity : FragmentActivity() {
         remixerFragment.detachFromShake()
     }
 
-    @StringListVariableMethod(key = "layouttttttt", title = "layout", limitedToValues =
+    @StringListVariableMethod(key = "layoutttttttt", title = "layout", limitedToValues =
     [R.layout.activity_main1.toString(), R.layout.activity_main2.toString(),
-        R.layout.activity_main3.toString(), R.layout.activity_main4.toString(), R.layout.activity_main5.toString()])
+        R.layout.activity_main3.toString(), R.layout.activity_main4.toString(),
+        R.layout.activity_main5.toString(), R.layout.activity_main6.toString()])
     fun changeLayout(layout: java.lang.String) {
         setContentView(java.lang.Integer.parseInt(layout.toString()))
     }

@@ -84,7 +84,18 @@
             android:background="@color/colorPrimary"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Button1"
+            android:text="Button"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Button"
             android:textColor="#fff" />
 
         <TextView
@@ -117,7 +128,18 @@
             android:background="@color/colorPrimary"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Button1"
+            android:text="Button"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Button"
             android:textColor="#fff" />
 
         <TextView
@@ -150,17 +172,6 @@
             android:background="@color/colorPrimary"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Button1"
-            android:textColor="#fff" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="8dp"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:padding="16dp"
             android:text="Button"
             android:textColor="#fff" />
 
@@ -173,17 +184,6 @@
             android:gravity="center"
             android:padding="16dp"
             android:text="Button"
-            android:textColor="#fff" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="8dp"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="Button1"
             android:textColor="#fff" />
 
         <TextView
