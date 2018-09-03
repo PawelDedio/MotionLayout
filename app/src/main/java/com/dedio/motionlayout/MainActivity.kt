@@ -1,11 +1,10 @@
 package com.dedio.motionlayout
 
-import android.app.Activity
 import android.os.Bundle
 import android.support.v4.app.FragmentActivity
-import android.support.v7.app.AppCompatActivity
 import com.google.android.libraries.remixer.annotation.RemixerBinder
 import com.google.android.libraries.remixer.annotation.StringListVariableMethod
+import com.google.android.libraries.remixer.ui.gesture.Direction
 import com.google.android.libraries.remixer.ui.view.RemixerFragment
 
 class MainActivity : FragmentActivity() {
@@ -22,7 +21,7 @@ class MainActivity : FragmentActivity() {
 
     override fun onResume() {
         super.onResume()
-        remixerFragment.attachToShake(this, 20.0)
+        remixerFragment.attachToShake(this, 4.0)
     }
 
     override fun onPause() {
