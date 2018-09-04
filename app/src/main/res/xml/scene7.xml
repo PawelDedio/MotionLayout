@@ -1,0 +1,98 @@
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorId="@+id/square1"
+            motion:touchAnchorSide="right" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/square1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="45dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/rectangle_vertical_big">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/square2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="45dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/rectangle_vertical_big"/>
+
+        <Constraint
+            android:id="@+id/rectangle_vertical_big"
+            android:layout_width="64dp"
+            android:layout_height="400dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/rectangle_vertical_small"
+            android:layout_width="6dp"
+            android:layout_height="50dp"
+            motion:layout_constraintBottom_toTopOf="@+id/rectangle_horizontal_small"
+            motion:layout_constraintStart_toStartOf="@+id/rectangle_vertical_big"
+            motion:layout_constraintEnd_toEndOf="@+id/rectangle_vertical_big"/>
+
+        <Constraint
+            android:id="@+id/rectangle_horizontal_small"
+            android:layout_width="64dp"
+            android:layout_height="6dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toTopOf="@+id/rectangle_vertical_big"
+            motion:layout_constraintStart_toStartOf="@+id/rectangle_vertical_small"
+            motion:layout_constraintEnd_toEndOf="@+id/rectangle_vertical_small"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/square1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            motion:layout_constraintBottom_toTopOf="@+id/square2"
+            motion:layout_constraintStart_toStartOf="@+id/rectangle_vertical_big">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/square2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            motion:layout_constraintBottom_toTopOf="@+id/rectangle_vertical_big"
+            motion:layout_constraintStart_toStartOf="@+id/rectangle_vertical_big"/>
+
+        <Constraint
+            android:id="@+id/rectangle_vertical_big"
+            android:layout_width="64dp"
+            android:layout_height="400dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+        <Constraint
+            android:id="@+id/rectangle_vertical_small"
+            android:layout_width="6dp"
+            android:layout_height="50dp"
+            motion:layout_constraintBottom_toTopOf="@+id/rectangle_horizontal_small"
+            motion:layout_constraintStart_toStartOf="@+id/rectangle_vertical_big"
+            motion:layout_constraintEnd_toEndOf="@+id/rectangle_vertical_big"/>
+
+        <Constraint
+            android:id="@+id/rectangle_horizontal_small"
+            android:layout_width="64dp"
+            android:layout_height="6dp"
+            motion:layout_constraintBottom_toTopOf="@+id/square1"
+            motion:layout_constraintStart_toStartOf="@+id/rectangle_vertical_small"
+            motion:layout_constraintEnd_toEndOf="@+id/rectangle_vertical_small"/>
+    </ConstraintSet>
+</MotionScene>

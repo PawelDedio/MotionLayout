@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v4.app.FragmentActivity
 import com.google.android.libraries.remixer.annotation.RemixerBinder
 import com.google.android.libraries.remixer.annotation.StringListVariableMethod
-import com.google.android.libraries.remixer.ui.gesture.Direction
 import com.google.android.libraries.remixer.ui.view.RemixerFragment
 
 class MainActivity : FragmentActivity() {
@@ -29,10 +28,11 @@ class MainActivity : FragmentActivity() {
         remixerFragment.detachFromShake()
     }
 
-    @StringListVariableMethod(key = "layoutttttttt", title = "layout", limitedToValues =
+    @StringListVariableMethod(key = "layout", title = "layout", limitedToValues =
     [R.layout.activity_main1.toString(), R.layout.activity_main2.toString(),
         R.layout.activity_main3.toString(), R.layout.activity_main4.toString(),
-        R.layout.activity_main5.toString(), R.layout.activity_main6.toString()])
+        R.layout.activity_main5.toString(), R.layout.activity_main6.toString(),
+        R.layout.activity_main7.toString()])
     fun changeLayout(layout: java.lang.String) {
         setContentView(java.lang.Integer.parseInt(layout.toString()))
     }

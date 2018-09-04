@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/scene7">
+
+    <View
+        android:id="@+id/square1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#ffe0bd"/>
+
+    <View
+        android:id="@+id/square2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#ffe0bd" />
+
+    <View
+        android:id="@+id/rectangle_vertical_big"
+        android:layout_width="64dp"
+        android:layout_height="400dp"
+        android:background="#ffe0bd" />
+
+    <View
+        android:id="@+id/rectangle_vertical_small"
+        android:layout_width="10dp"
+        android:layout_height="50dp"
+        android:background="#000" />
+
+    <View
+        android:id="@+id/rectangle_horizontal_small"
+        android:layout_width="64dp"
+        android:layout_height="10dp"
+        android:background="#000" />
+</android.support.constraint.motion.MotionLayout>

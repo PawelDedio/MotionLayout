@@ -7,13 +7,13 @@
         motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end">
 
-        <!--<KeyFrameSet>-->
-            <!--<KeyPosition-->
-                <!--motion:keyPositionType="parentRelative"-->
-                <!--motion:percentY="0.40"-->
-                <!--motion:framePosition="50"-->
-                <!--motion:target="@+id/arrow_up"/>-->
-        <!--</KeyFrameSet>-->
+        <KeyFrameSet>
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.40"
+                motion:framePosition="50"
+                motion:target="@+id/arrow_up"/>
+        </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
